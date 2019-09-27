@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\1.Programming\1.C#\BenchMarking\Performance .NET Core\PerformanceNETCore" t="IncludeFlat">
+      <e p="Cycles" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cycles.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Cycles.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PerformanceNETCore" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="PerformanceNETCore.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PerformanceNETCore.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="PerformanceNETCore.sln" t="IncludeFlat" />
+      <e p="ToLowerVsToUpper" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="ToLowerVsToUpper.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="ToLowerVsToUpper.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+    <e p="C:\Users\Progger\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Progger\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_PerformanceNETCore.253254301.00" t="ExcludeRecursive" />
+  </component>
+</project>
