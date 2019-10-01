@@ -5,7 +5,7 @@ using System;
 namespace ToLowerVsToUpper
 {
     [CoreJob]
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter, CsvMeasurementsExporter]
+    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
     public class Bench
     {
         public const string defaultString = "VXTDuob5YhummuDq1PPXOHE4PbrRjYfBjcHdFs8UcKSAHOCGievbUItWhU3ovCmRALgdZUG1CB0sQ4iMj8Z1ZfkML2owvfkOKxBCoFUAN4VLd4I8ietmlsS5PtdQEn6zEgy1uCVZXiXuubd0xM5ONVZBqDu6nOVq1GQloEjeRN8jXrj0MVUexB9aIECs7caKGddpuut3";

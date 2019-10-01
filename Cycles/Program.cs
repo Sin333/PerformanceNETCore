@@ -2,60 +2,100 @@
 using BenchmarkDotNet.Running;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Cycles
 {
     [CoreJob]
+    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
     public class Bench
     {
-        [Benchmark]
-        public bool ListForEach()
+        private List<int> _list;
+        private int[] _array;
+
+        [Params(100000, 10000000)] public int N;
+
+        [GlobalSetup]
+        public void Setup()
         {
-            bool result = default;
-            var list = new List<object>();
-            for (int i = 0; i < 1000000; i++)
-            {
-                list.Add(new Random(DateTime.Now.Millisecond));
-            }
-
-            var listend = new List<object>();
-            list.ForEach(item =>
-            {
-                if (item.GetType() == typeof(object))
-                    result = true;
-
-                listend.Add(item);
-
-                result = false;
-            });
-
-            return result;
+            const int MIN = 1;
+            const int MAX = 10;
+            Random random = new Random();
+            _list = Enumerable.Repeat(0, N).Select(i => random.Next(MIN, MAX)).ToList();
+            _array = _list.ToArray();
         }
 
         [Benchmark]
-        public bool FOREACH()
+        public int ForList()
         {
-            bool result = default;
-            var list = new List<object>();
-            for (int i = 0; i < 1000000; i++)
+            int total = 0;
+            for (int i = 0; i < _list.Count; i++)
             {
-                list.Add(new Random(DateTime.Now.Millisecond));
+                total += _list[i];
             }
 
-            var listend = new List<object>();
-            foreach (var item in list)
+            return total;
+        }
+        
+        [Benchmark]
+        public int ForListFromEnd()
+        {
+            int total = 0;
+            for (int i = _list.Count-1; i > 0; i--)
             {
-                if (item.GetType() == typeof(object))
-                    result = true;
-
-                listend.Add(item);
-
-                result = false;
+                total += _list[i];
             }
 
-            return result;
+            return total;
         }
 
+        [Benchmark]
+        public int ForeachList()
+        {
+            int total = 0;
+            foreach (int i in _list)
+            {
+                total += i;
+            }
+
+            return total;
+        }
+
+        [Benchmark]
+        public int ForeachArray()
+        {
+            int total = 0;
+            foreach (int i in _array)
+            {
+                total += i;
+            }
+
+            return total;
+        }
+
+        [Benchmark]
+        public int ForArray()
+        {
+            int total = 0;
+            for (int i = 0; i < _array.Length; i++)
+            {
+                total += _array[i];
+            }
+
+            return total;
+        }
+        
+        [Benchmark]
+        public int ForArrayFromEnd()
+        {
+            int total = 0;
+            for (int i = _array.Length-1; i > 0; i--)
+            {
+                total += _array[i];
+            }
+
+            return total;
+        }
     }
 
 

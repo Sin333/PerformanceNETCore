@@ -3,6 +3,125 @@
   <component name="ContentModelStore">
     <e p="C:\1.Programming\1.C#\BenchMarking\Performance .NET Core\PerformanceNETCore" t="IncludeFlat">
       <e p="Cycles" t="IncludeRecursive">
+        <e p="BenchmarkDotNet.Artifacts" t="Include">
+          <e p="Cycles.Bench-20190930-120325.log" t="Include" />
+          <e p="Cycles.Bench-20190930-120920.log" t="Include" />
+          <e p="Cycles.Bench-20190930-120926.log" t="Include" />
+          <e p="results" t="Include">
+            <e p="BuildPlots.R" t="Include" />
+            <e p="Cycles.Bench-barplot.png" t="Include" />
+            <e p="Cycles.Bench-boxplot.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=100000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=100000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=100000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=10000000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=10000000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-Core N=10000000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-facetTimeline.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-facetTimelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-N=100000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArray-N=10000000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=100000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=100000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=100000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=10000000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=10000000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-Core N=10000000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-facetTimeline.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-facetTimelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-N=100000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForArrayFromEnd-N=10000000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=100000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=100000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=100000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=10000000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=10000000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-Core N=10000000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-facetTimeline.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-facetTimelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-N=100000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachArray-N=10000000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=100000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=100000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=100000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=10000000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=10000000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-Core N=10000000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-facetTimeline.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-facetTimelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-N=100000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForeachList-N=10000000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=100000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=100000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=100000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=10000000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=10000000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForList-Core N=10000000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForList-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForList-density.png" t="Include" />
+            <e p="Cycles.Bench-ForList-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForList-facetTimeline.png" t="Include" />
+            <e p="Cycles.Bench-ForList-facetTimelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForList-N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForList-N=100000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForList-N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForList-N=10000000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=100000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=100000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=100000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=10000000-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=10000000-timeline.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-Core N=10000000-timelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-cummean.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-density.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-facetTimeline.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-facetTimelineSmooth.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-N=100000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-N=100000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-N=10000000-density.png" t="Include" />
+            <e p="Cycles.Bench-ForListFromEnd-N=10000000-facetDensity.png" t="Include" />
+            <e p="Cycles.Bench-measurements.csv" t="Include" />
+            <e p="Cycles.Bench-report-default.md" t="Include" />
+            <e p="Cycles.Bench-report-github.md" t="Include" />
+            <e p="Cycles.Bench-report.asciidoc" t="Include" />
+            <e p="Cycles.Bench-report.csv" t="Include" />
+            <e p="Cycles.Bench-report.html" t="Include" />
+            <e p="Rplots.pdf" t="Include" />
+          </e>
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Cycles.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -20,7 +139,7 @@
         <e p="Class1.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
-            <e p="netcoreapp2.2" t="Include">
+            <e p="netcoreapp3.0" t="Include">
               <e p="PerformanceNETCore.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -32,7 +151,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
-            <e p="netcoreapp2.2" t="Include">
+            <e p="netcoreapp3.0" t="Include">
               <e p="ToLowerVsToUpper.AssemblyInfo.cs" t="Include" />
             </e>
           </e>

@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 namespace PerformanceNETCore
 {
     [CoreJob]
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter, CsvMeasurementsExporter]
+    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
     public class Bench
     {
         private List<string> _files;
