@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 
 namespace Cycles
 {
-    [CoreJob]
+    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
     [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
     public class Bench
     {
@@ -26,12 +27,36 @@ namespace Cycles
         }
 
         [Benchmark]
+        public int ForArray()
+        {
+            int total = 0;
+            for (int i = 0; i < _array.Length; i++)
+            {
+                total += _array[i];
+            }
+
+            return total;
+        }
+
+        [Benchmark]
         public int ForList()
         {
             int total = 0;
             for (int i = 0; i < _list.Count; i++)
             {
                 total += _list[i];
+            }
+
+            return total;
+        }
+
+        [Benchmark]
+        public int ForArrayFromEnd()
+        {
+            int total = 0;
+            for (int i = _array.Length - 1; i > 0; i--)
+            {
+                total += _array[i];
             }
 
             return total;
@@ -50,18 +75,6 @@ namespace Cycles
         }
 
         [Benchmark]
-        public int ForeachList()
-        {
-            int total = 0;
-            foreach (int i in _list)
-            {
-                total += i;
-            }
-
-            return total;
-        }
-
-        [Benchmark]
         public int ForeachArray()
         {
             int total = 0;
@@ -74,26 +87,22 @@ namespace Cycles
         }
 
         [Benchmark]
-        public int ForArray()
+        public int ForeachList()
         {
             int total = 0;
-            for (int i = 0; i < _array.Length; i++)
+            foreach (int i in _list)
             {
-                total += _array[i];
+                total += i;
             }
 
             return total;
         }
         
         [Benchmark]
-        public int ForArrayFromEnd()
+        public int ForeachListLINQ()
         {
             int total = 0;
-            for (int i = _array.Length-1; i > 0; i--)
-            {
-                total += _array[i];
-            }
-
+            _list.ForEach(item => total += item);
             return total;
         }
     }

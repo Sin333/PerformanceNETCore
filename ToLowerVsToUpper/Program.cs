@@ -1,10 +1,11 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using System;
 
 namespace ToLowerVsToUpper
 {
-    [CoreJob]
+    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
     [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
     public class Bench
     {

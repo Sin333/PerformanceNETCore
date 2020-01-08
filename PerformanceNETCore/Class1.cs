@@ -1,13 +1,13 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.RegularExpressions;
 
 namespace PerformanceNETCore
 {
-    [CoreJob]
+    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
     [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
     public class Bench
     {
@@ -70,8 +70,8 @@ namespace PerformanceNETCore
                     if (_hash.Contains(extension))
                         result = true;
                 }
-                
-                if(!result) 
+
+                if (!result)
                     throw new Exception("false");
             }
             catch (Exception e)
