@@ -5,10 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace PerformanceNETCore
+namespace TryCatch
 {
-    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
+    [SimpleJob(RuntimeMoniker.Net70)]
+    [MinColumn, MaxColumn, MeanColumn, MedianColumn]
+    [MemoryDiagnoser()]
+    [MarkdownExporter, CsvExporter]
     public class Bench
     {
         private List<string> _files;

@@ -3,18 +3,22 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
-namespace CollectionMaterializeTo
+namespace ToCollectionMaterialize
 {
-    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
+    [SimpleJob(RuntimeMoniker.Net70)]
+    [MemoryDiagnoser(false)]
+    [MinColumn, MaxColumn, MeanColumn, MedianColumn]
+    [MarkdownExporter, CsvExporter]
     public class Bench
     {
         [Params(100000)] public int N;
         IEnumerable<int> collection = null;
 
         int[] array = Array.Empty<int>();
+        ImmutableArray<int> imarray = ImmutableArray.Create<int>();
         List<int> list = new List<int>();
         HashSet<int> hashSet = new HashSet<int>();
         Dictionary<int, bool> dictionary = new Dictionary<int, bool>();
@@ -28,25 +32,31 @@ namespace CollectionMaterializeTo
 
         #region Collection To
         [Benchmark]
-        public void ArrayTo()
+        public void ToArray()
         {
             array = collection.ToArray();
         }
+        
+        [Benchmark]
+        public void ToImmutableArray()
+        {
+            imarray = collection.ToImmutableArray();
+        }
 
         [Benchmark]
-        public void ListTo()
+        public void ToList()
         {
             list = collection.ToList();
         }
 
         [Benchmark]
-        public void HashSetTo()
+        public void ToHashSet()
         {
             hashSet = collection.ToHashSet();
         }
 
         [Benchmark]
-        public void DictionaryTo()
+        public void ToDictionary()
         {
             dictionary = collection.ToDictionary(x => x, x => false);
         }

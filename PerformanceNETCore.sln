@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceNETCore", "PerformanceNETCore\PerformanceNETCore.csproj", "{C52B481E-CA9F-4BDE-B20C-E622575EB66A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatch", "TryCatch\TryCatch.csproj", "{C52B481E-CA9F-4BDE-B20C-E622575EB66A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cycles", "Cycles\Cycles.csproj", "{F115C656-787F-4C6D-86CB-15B99A07F2C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToLowerVsToUpper", "ToLowerVsToUpper\ToLowerVsToUpper.csproj", "{B4CA30E6-589A-45D5-BC8B-D6AEBD5E0657}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionMaterializeTo", "CollectionMaterializeTo\CollectionMaterializeTo.csproj", "{1FE2DC9E-7E55-473B-AC33-F6D1DDF68329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToCollectionMaterialize", "ToCollectionMaterialize\ToCollectionMaterialize.csproj", "{1FE2DC9E-7E55-473B-AC33-F6D1DDF68329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

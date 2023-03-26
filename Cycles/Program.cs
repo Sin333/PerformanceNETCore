@@ -7,8 +7,10 @@ using System.Linq;
 
 namespace Cycles
 {
-    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
+    [SimpleJob(RuntimeMoniker.Net70)]
+    [MemoryDiagnoser(false)]
+    [MinColumn, MaxColumn, MeanColumn, MedianColumn]
+    [MarkdownExporter, CsvExporter]
     public class Bench
     {
         private List<int> _list;

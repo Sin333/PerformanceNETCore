@@ -5,16 +5,24 @@ using System;
 
 namespace ToLowerVsToUpper
 {
-    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, RPlotExporter]
+    [SimpleJob(RuntimeMoniker.Net70)]
+    [MemoryDiagnoser()]
+    [MinColumn, MaxColumn, MeanColumn, MedianColumn]
+    [MarkdownExporter, CsvExporter]
     public class Bench
     {
         public const string defaultString = "VXTDuob5YhummuDq1PPXOHE4PbrRjYfBjcHdFs8UcKSAHOCGievbUItWhU3ovCmRALgdZUG1CB0sQ4iMj8Z1ZfkML2owvfkOKxBCoFUAN4VLd4I8ietmlsS5PtdQEn6zEgy1uCVZXiXuubd0xM5ONVZBqDu6nOVq1GQloEjeRN8jXrj0MVUexB9aIECs7caKGddpuut3";
 
         [Benchmark]
-        public bool ToLower()
+        public bool StringCompareIgnore()
         {
-            return defaultString.ToLower() == defaultString.ToLower();
+            return string.Equals(defaultString, defaultString, StringComparison.OrdinalIgnoreCase);
+        }
+
+        [Benchmark]
+        public bool ToUpperInvariant()
+        {
+            return defaultString.ToUpperInvariant() == defaultString.ToUpperInvariant();
         }
 
         [Benchmark]
@@ -28,13 +36,12 @@ namespace ToLowerVsToUpper
         {
             return defaultString.ToUpper() == defaultString.ToUpper();
         }
-
+        
         [Benchmark]
-        public bool ToUpperInvariant()
+        public bool ToLower()
         {
-            return defaultString.ToUpperInvariant() == defaultString.ToUpperInvariant();
+            return defaultString.ToLower() == defaultString.ToLower();
         }
-
     }
 
 
